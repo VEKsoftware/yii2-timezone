@@ -31,6 +31,6 @@ class TimezoneAction extends Action
         }
 
         \Yii::$app->session->set('timezone', $timezone);
-        \Yii::$app->end();
+//        \Yii::$app->end();
     }
 }

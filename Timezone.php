@@ -48,7 +48,7 @@ class Timezone extends Component
                 var timezoneAbbr = '';
                 try {
                     var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-                    var timezoneAbbr = /\((.*)\)/.exec(new Date().toString())[1];
+                    var timezoneAbbr = /\((.*)\)/.exec((new Date()).toString())[1];
                 }
                 catch(err) {
                     console.log(err);

@@ -27,6 +27,7 @@ class Timezone extends Component
      */
     public function init()
     {
+        if(! Yii::$app instanceof \yii\web\Application) return;
         $this->name = \Yii::$app->session->get('timezone');
         if ($this->name == null) {
             $this->registerTimezoneScript($this->actionRoute);

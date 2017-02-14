@@ -43,8 +43,6 @@ class Timezone extends Component
             $this->registerTimezoneScript($this->actionRoute);
             $this->name = date_default_timezone_get();
         }
-
-        Yii::$app->setTimeZone($this->name);
     }
 
     /**
